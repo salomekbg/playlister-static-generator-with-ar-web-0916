@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Playlister Static Generator with Ar | Songs</title>
+  </head>
+  <body>
+    <h1>Playlist Static Generation with Ar | All Songs:</h1>
+    <ul>
+    <% @songs.each do |song| %>
+      <li><h4><a href="/songs?id=<%= song.id %>"><%= song.artist.name %> - <%= song.name %> - <%= song.genre.name %></a></h4></li>
+    <% end %>
+  </ul>
+  </body>
+</html>

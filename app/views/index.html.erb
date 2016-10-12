@@ -1,1 +1,15 @@
-<!-- The main page of playlister -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Playlister Static Generator with Ar</title>
+  </head>
+  <body>
+    <h1>Playlist Static Generator with Ar:</h1>
+    <ul>
+      <li><a href="/artists">Artists <%= artists.all.count %></a></li>
+      <li><a href="/genres">Genres <%= genres.all.count %></a></li>
+      <li><a href="/songs">Songs <%= songs.all.count %></a></li>
+    </ul>
+  </body>
+</html>
